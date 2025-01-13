@@ -1,0 +1,418 @@
+body{
+
+    background: linear-gradient(360deg,rgb(161, 255, 249), #cecece);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+   
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color:rgb(161, 255, 249);
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: rgb(73, 245, 222);
+}
+.nav-responsive{
+    background-color: rgb(161, 255, 249);
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+.subtitulo2{
+    font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.pedidos {
+    font-size: 22px;
+    padding: 30px;
+    padding-top: 20px;
+   text-align:center ;
+    min-width: 10px;
+    min-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.31em ;
+border:none ;
+color: #fff;
+cursor: pointer;
+transition: .3s ease all;
+font-size: 1.12em;
+}
+
+.caja{
+    padding: 100px;
+    font-size: 22px;
+    left: 120px;
+    
+}
+
+body .color{
+    background: linear-gradient(360deg,rgb(191, 188, 179), #ffffff);
+    left: -30px;
+    right: -30px;
+}
+
+.caja .pedidos img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+form{
+    margin: 40px 0;
+    text-align: center;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    
+}
+.texto {
+text-align: center;
+
+
+}
+
+.input-padron{
+    background: transparent;
+    border-color: #ffffff;
+    border-style: groove;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    right: 50px;
+    border-radius: 25px;
+}
+
+.input-padron :hover{
+    transform: scale(1.2);
+    background-color: rgb(161, 255, 249);;
+}
+
+form label .input-padron :hover{
+position: absolute;
+border-radius: 25px;
+
+
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: rgb(0, 162, 151);;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: linear-gradient(85deg,rgb(106, 106, 247),rgb(255, 63, 63));
+    transform: scale(1.2);
+}
+
+
+/* Estilos Generales */
+body {
+    background: linear-gradient(360deg, rgb(161, 255, 249), #cecece);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header {
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: rgb(161, 255, 249);
+    text-decoration: none;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: rgb(161, 255, 249);
+}
+
+.nav-responsive {
+    background-color: rgb(161, 255, 249);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Pedidos */
+.pedidos {
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.31em;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.caja {
+    padding: 100px;
+    font-size: 22px;
+}
+
+.caja .pedidos img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/* Formularios */
+form {
+    margin: 40px 0;
+    text-align: center;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    background: transparent;
+    border-color: #ffffff;
+    border-style: groove;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.input-padron:hover {
+    transform: scale(1.2);
+    background-color: rgb(161, 255, 249);
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(0, 162, 151);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: linear-gradient(85deg, rgb(106, 106, 247), rgb(255, 63, 63));
+    transform: scale(1.2);
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 1024px) {
+    .contenedor-header header {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .contenedor-header header .logo a {
+        font-size: 28px;
+    }
+
+    .contenedor-header header ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        align-items: center;
+        background: #000;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    .contenedor-header header ul.active {
+        display: flex;
+    }
+
+    .nav-responsive {
+        display: block;
+        color: #000;
+
+    }
+
+    .caja {
+        padding: 50px;
+        font-size: 18px;
+    }
+
+    .pedidos {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-header header {
+        padding: 8px;
+    }
+
+    .contenedor-header header .logo a {
+        font-size: 24px;
+    }
+
+    .caja {
+        padding: 20px;
+    }
+
+    .pedidos {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .input-padron {
+        width: 70%;
+    }
+
+    .enviar {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor-header header {
+        padding: 5px;
+    }
+
+    .contenedor-header header .logo a {
+        font-size: 20px;
+    }
+
+    .pedidos {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input-padron {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .enviar {
+        width: 80%;
+    }
+}
